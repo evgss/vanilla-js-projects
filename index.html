@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Square Warriors</title>
+</head>
+<body>
+
+<div class="screen">
+    <div class="screen__menu">
+        <h1>Задайте параметры</h1>
+        <form class="screen__form">
+            <div>
+                <div class="form__title">Размеры игрока 1</div>
+                <span class="first-player-size rangeValue">50</span>
+                <input class="range first"
+                       onChange="firstSizeChange(this.value)" onmousemove="firstSizeChange(this.value)"
+                       type="range" value="50" min="50" max="150" step="10">
+            </div>
+            <div>
+                <div class="form__title">Размеры игрока 2</div>
+                <span class="second-player-size rangeValue">50</span>
+                <input
+                        onChange="secondSizeChange(this.value)" onmousemove="secondSizeChange(this.value)"
+                        class="range"
+                        type="range" value="50" min="50" max="150" step="10">
+            </div>
+            <div>
+                <div class="form__title">Коэффициент скорости игрока 1</div>
+                <span class="first-player-speed rangeValue">10</span>
+                <input
+                        onChange="firstSpeedChange(this.value)" onmousemove="firstSpeedChange(this.value)"
+                        class="range"
+                        type="range" value="10" min="10" max="50" step="10">
+            </div>
+            <div>
+                <div class="form__title">Коэффициент скорости игрока 2</div>
+                <span class="second-player-speed rangeValue">10</span>
+                <input
+                        onChange="secondSpeedChange(this.value)" onmousemove="secondSpeedChange(this.value)"
+                        class="range"
+                        type="range" value="10" min="10" max="50" step="10">
+            </div>
+            <button type="submit">Начать игру</button>
+        </form>
+    </div>
+</div>
+
+<div class="screen">
+    <div class="screen__game">
+        <div class="field">
+        </div>
+    </div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    color: #FFF;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.screen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #29323C 0%, #485563 100%);
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.screen__menu {
+    height: 80%;
+}
+
+.screen__menu form {
+    margin-top: 50px;
+}
+
+.screen__menu form > div, .screen__menu form input {
+    margin-top: 10px;
+}
+
+.screen__menu form button {
+    margin-top: 50px;
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: rgb(205, 216, 228);
+    text-shadow: 0 -1px rgb(46, 53, 58);
+    text-decoration: none;
+    user-select: none;
+    line-height: 2em;
+    padding: 1px 1.2em;
+    outline: none;
+    border: 1px solid rgba(33, 43, 52, 1);
+    border-radius: 3px;
+    background: rgb(81, 92, 102) linear-gradient(rgb(81, 92, 102), rgb(69, 78, 87));
+    box-shadow: inset 0 1px rgba(101, 114, 126, 1),
+    inset 0 0 1px rgba(140, 150, 170, .8),
+    0 1px rgb(83, 94, 104),
+    0 0 1px rgb(86, 96, 106);
+}
+
+h1 {
+    color: #999;
+}
+
+.form__title {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #efd8d8;
+    font-weight: 400;
+}
+
+.rangeValue {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ded0d0;
+    font-weight: 400;
+}
+
+.range {
+    width: 400px;
+    height: 15px;
+    -webkit-appearance: none;
+    background: #111;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00fd0a;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px #00fd0a;
+}
+
+
+.field {
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    transition: 0.1s all ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
